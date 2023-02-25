@@ -1,0 +1,12 @@
+.test {
+    border : 1px solid black;
+    background : lime;
+    margin : 0;
+    width : 50px;
+}
+
+.tedt2 {
+    border : 1px solid red;
+    margin : 0;
+    width : 50px;
+}

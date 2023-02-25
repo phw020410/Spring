@@ -3,11 +3,11 @@ package com.example.demo.car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-import com.example.demo.Tire;
+import jakarta.annotation.Resource;
 
 public class Car {
     @Autowired
-    @Qualifier("americaTire")
+    @Qualifier("koreaTire")
     private Tire tire;
     
     public Car() {
