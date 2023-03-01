@@ -10,3 +10,6 @@ setter에 오면 생성자를 만들고 설정자 메서드를 실행 후 빈을
 Autowired : type 우선 --> spring
 Resource : id 우선 --> java standard
 
+goorm ip : 43.200.56.41
+port : 58643
+pw : ma2Asuiu5XutaOxAw4gdRk2
