@@ -10,9 +10,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class boardDto {
-    int seq;
-    String subject;
-    String author;
-    String date;
-    int view;
+    private int seq;
+    private String subject;
+    private String author;
+    private String date;
+    private int view;
 }

@@ -13,3 +13,5 @@ Resource : id 우선 --> java standard
 goorm ip : 43.200.56.41
 port : 58643
 pw : ma2Asuiu5XutaOxAw4gdRk2
+
+mysql --host 43.200.56.41 --port 56565 --user root -p
