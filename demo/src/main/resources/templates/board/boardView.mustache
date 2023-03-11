@@ -1,5 +1,6 @@
-{{>layout/header}}
+{{>board/layout/header}}
     <body>
+        <a href="add" type="button">등록</a>
         <table>
             <thead>
                 <tr>
@@ -12,13 +13,18 @@
             </thead>
 
             <tbod>
+                {{#board}}
                 <tr>
-                    {{#board}}
                     <td>{{seq}}</td>
-                    <td>{{subject}}</td>
-                    {{/board}}
+                    <td>
+                        <a href="/board/view/{{seq}}">{{subject}}</a>
+                    </td>
+                    <td>{{author}}</td>
+                    <td>{{date}}</td>
+                    <td>{{view}}</td>
                 </tr>
+                {{/board}}
             </tbod>
         </table>
     </body>
-{{>layout/footer}}
+{{>board/layout/footer}}

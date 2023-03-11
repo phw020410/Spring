@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0/EN"
+    "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.models.dao.board.boardMapper">
+    <select id="getAllBoard" resultType="boardDto">
+        select * from post_content order by date desc;
+    </select>
+
+    <select id="getSeq" resultType="int">
+        select ifnull(max(seq)+1, 1) from post_content;
+    </select>
+
+    <select id="getBoard" resultType="boardDto">
+        select * from post_content where seq=#{seq};
+    </select>
+
+    <update id="addView">
+        update post_content set view = ifnull(view, 0) + 1 where seq = #{seq};
+    </update>
+
+    <insert id="addData">
+        insert into post_content (
+            seq,
+            subject, 
+            content, 
+            author, 
+            date
+        ) values (
+            #{board.seq},
+            #{board.subject},
+            #{board.content},
+            #{board.author},
+            now()
+        );
+    </insert>
+</mapper>

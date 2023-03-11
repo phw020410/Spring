@@ -15,3 +15,6 @@ port : 58643
 pw : ma2Asuiu5XutaOxAw4gdRk2
 
 mysql --host 43.200.56.41 --port 56565 --user root -p
+
+할거 : sql, mybatis 매핑, js, css, html, 선형대수, 네트워크
+해볼까? : ai 찍먹
